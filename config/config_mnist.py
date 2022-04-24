@@ -13,7 +13,7 @@ from datetime import datetime
 now_time = datetime.now()
 time_str = datetime.strftime(now_time, '%m-%d_%H-%M')
 
-class_names = (0,1,2,3,4,5,6,,7,8,9)
+class_names = (0,1,2,3,4,5,6,7,8,9)
 
 cfg = EasyDict()
 
