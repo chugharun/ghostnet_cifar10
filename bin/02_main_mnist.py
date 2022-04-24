@@ -70,9 +70,9 @@ if __name__ == '__main__':
 
     # ------------------------------------ step 1/5 : 加载数据------------------------------------
     # 构建MyDataset实例
-    train_data = torchvision.datasets.MNIST(data_dir=train_dir, train=True,
+    train_data = torchvision.datasets.MNIST(data=train_dir, train=True,
                                         download=True, transform=cfg.transforms_train)
-    valid_data = torchvision.datasets.MNIST(data_dir=test_dir, train=False,
+    valid_data = torchvision.datasets.MNIST(data=test_dir, train=False,
                                         download=True, transform=cfg.transforms_valid)
 
     # 构建DataLoder
